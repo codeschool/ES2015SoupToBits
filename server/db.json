@@ -19,7 +19,7 @@
   "activeUsers": [
     {
       "name": "Sam",
-      "avatar": "avatar.jpg"
+      "avatar": "avatar.jpg#\" onload=\"alert('XSS Attack')\""
     },
     {
       "name": "Tyler",
