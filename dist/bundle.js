@@ -1232,7 +1232,7 @@ function articleElement(title, lastReply) {
 function activeUsersTemplate(name, avatar) {
 
   var safeName = _xssFilters2.default.inHTMLData(name);
-  var safeAvatar = _xssFilters2.default.inHTMLData(avatar);
+  var safeAvatar = _xssFilters2.default.inDoubleQuotedAttr(avatar);
 
   var template = "\n    <div class=\"active-avatar\">\n    <img width=\"54\" src=\"assets/images/" + safeAvatar + "\">\n    <h5 class=\"post-author\">" + safeName + "</h5>\n    </div>";
 

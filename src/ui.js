@@ -41,7 +41,7 @@ function articleElement(title, lastReply){
 function activeUsersTemplate(name, avatar){
 
   let safeName = xss.inHTMLData(name);
-  let safeAvatar = xss.inHTMLData(avatar);
+  let safeAvatar = xss.inDoubleQuotedAttr(avatar);
 
   let template = `
     <div class="active-avatar">
